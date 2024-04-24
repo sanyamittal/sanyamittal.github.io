@@ -1,29 +1,15 @@
 ---
-title: Fantastic Beasts and Where to Find Them
-date: 2019-11-01
+title: Code Block Examples
+date: 2022-09-11
 tags:
-  - Novel
+  - Code
 ---
 
-import SpotifyPlayer from "./SpotifyPlayer";
+import SpotifyPlayer from "./SpotifyPlayer"
 
 Here will a React component go:
 
-<SpotifyPlayer
-  uri="spotify:user:bbcamerica:playlist:3w18u69NplCpXVG4fQG726"
-  size="large"
-  theme="black"
-  view="list"
-/>
-
-Here will a live code example go:
-
-```js react-live
-const onClick = () => {
-  alert("You opened me");
-};
-render(<button onClick={onClick}>Alohomora!</button>);
-```
+<SpotifyPlayer />
 
 Here will a normal code block go:
 
@@ -38,14 +24,14 @@ var dependencies = {};
 
 var treeURL = 'https://api.github.com/repos/PrismJS/prism/git/trees/gh-pages?recursive=1';
 var treePromise = new Promise(function(resolve) {
-	$u.xhr({
-		url: treeURL,
-		callback: function(xhr) {
-			if (xhr.status < 400) {
-				resolve(JSON.parse(xhr.responseText).tree);
-			}
-		}
-	});
+  $u.xhr({
+    url: treeURL,
+    callback: function(xhr) {
+      if (xhr.status < 400) {
+        resolve(JSON.parse(xhr.responseText).tree);
+      }
+    }
+  });
 });
 ```
 
@@ -63,25 +49,25 @@ A code block with a JSDoc comment, short, and long comment:
  */
 const getValue = (input, rootFontSize = 16) => {
   if (typeof input === `number`) {
-    return input / rootFontSize;
+    return input / rootFontSize
   }
 
-  const isPxValue = input.slice(-2) === `px`;
+  const isPxValue = input.slice(-2) === `px`
 
   if (isPxValue) {
-    return parseFloat(input.slice(0, -2));
+    return parseFloat(input.slice(0, -2))
   }
 
-  return parseFloat(input.slice(0, -3));
-};
+  return parseFloat(input.slice(0, -3))
+}
 
 // This is a little helper function
-const helper = (a, b) => a + b;
+const helper = (a, b) => a + b
 
 // This is also a little helper function but this time with a really long one-line comment that should show some more details
-const morehelper = (a, b) => a * b;
+const morehelper = (a, b) => a * b
 
-export { getValue, helper, morehelper };
+export { getValue, helper, morehelper }
 ```
 
 Normal block without language:
@@ -100,8 +86,8 @@ export default Layout
 
 Code block with code highlighting:
 
-```jsx:title=src/components/post.jsx {5-7,10}
-import React from "react";
+```jsx title=src/components/post.jsx highlight=5-7,10
+import * as React from "react"
 
 const Post = ({ data: { post } }) => (
   <Layout>
@@ -134,9 +120,9 @@ const Post = ({ data: { post } }) => (
       <MDXRenderer>{post.body}</MDXRenderer>
     </section>
   </Layout>
-);
+)
 
-export default Post;
+export default Post
 ```
 
 Code block without title:
@@ -145,49 +131,51 @@ Code block without title:
 Harry Potter and the Philosopher's Stone
 ```
 
-Code block without lineNumbers (but lang):
+Code block with lineNumbers (and lang):
 
-```text noLineNumbers
+```text withLineNumbers
 Harry Potter and the Chamber of Secrets
 ```
 
-Code block without lineNumbers (and without lang):
+Code block with lineNumbers (and without lang):
 
-```noLineNumbers
+```none withLineNumbers
 Harry Potter and the Chamber of Secrets
 ```
 
 Code block with only the title:
 
-```:title=src/utils/scream.js
+```none title=src/utils/scream.js
 const scream = (input) => window.alert(input)
 ```
 
-Code block with only the title but without lineNumbers:
+Code block with only the title and with lineNumbers:
 
-```:title=src/utils/scream.js noLineNumbers
+```none title=src/utils/scream.js withLineNumbers
 const scream = (input) => window.alert(input)
 ```
 
 Line highlighting without code title:
 
-```js {2,4-5}
-const test = 3;
-const foo = "bar";
-const harry = "potter";
-const hermione = "granger";
-const ron = "weasley";
+```js highlight=2,4-5
+const test = 3
+const foo = "bar"
+const harry = "potter"
+const hermione = "granger"
+const ron = "weasley"
 ```
 
 Here will `inline code` go, just inside the text. Wow!
 
-Code block without line numbers but with highlighting, language, and title:
+Code block with line numbers, highlighting, language, and title:
 
-```tsx:title=src/components/blog.tsx {7-9,16} noLineNumbers
-import React from "react";
+<div data-testid="code-block">
+
+```tsx title=src/components/blog.tsx highlight=7-8,19,21 withLineNumbers
+import * as React from "react"
 
 const Blog = ({ posts }: PostsProps) => {
-  const { tagsPath, basePath } = useSiteMetadata();
+  const { tagsPath, basePath } = useSiteMetadata()
 
   return (
     <Layout>
@@ -195,18 +183,16 @@ const Blog = ({ posts }: PostsProps) => {
         <Heading variant="h2" as="h2">
           Blog
         </Heading>
-        <Styled.a
-          as={Link}
-          sx={{ variant: `links.secondary` }}
-          to={`/${basePath}/${tagsPath}`.replace(/\/\/+/g, `/`)}
-        >
+        <Styled.a as={Link} sx={{ variant: `links.secondary` }} to={`/${basePath}/${tagsPath}`.replace(/\/\/+/g, `/`)}>
           View all tags
         </Styled.a>
       </Flex>
       <Listing posts={posts} sx={{ mt: [4, 5] }} />
     </Layout>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog
 ```
+
+</div>
