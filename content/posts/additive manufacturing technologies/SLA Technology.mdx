@@ -32,72 +32,42 @@ Formlabs’ print preparation software, PreForm, is free to download and can cre
 
 The printing process in a typical SLA printer is as follows:
 
-The print preparation software sends the design to the printer, typically over a wireless internet connection, USB, or ethernet. 
-The build platform is positioned in the tank of liquid photopolymer, at a distance of one layer height from the surface of the liquid.
-The UV laser is used to draw a pre-programmed design or shape onto the surface of the photopolymer vat. It creates a layer by selectively curing and solidifying the photopolymer resin. The laser beam is focused in a predetermined path using a set of mirrors, called galvos. The whole cross-sectional area of the model is scanned, so the produced part is fully solid.
-Then, the build platform moves downward or upward after one layer and a blade recoats the top of the tank with resin.
-This process is repeated for each layer of the design until the 3D object is complete. 
+1. The print preparation software sends the design to the printer, typically over a wireless internet connection, USB, or ethernet. 
+2. The build platform is positioned in the tank of liquid photopolymer, at a distance of one layer height from the surface of the liquid.
+3. The UV laser is used to draw a pre-programmed design or shape onto the surface of the photopolymer vat. It creates a layer by selectively curing and solidifying the photopolymer resin. The laser beam is focused in a predetermined path using a set of mirrors, called galvos. The whole cross-sectional area of the model is scanned, so the produced part is fully solid.
+4. Then, the build platform moves downward or upward after one layer and a blade recoats the top of the tank with resin.
+5. This process is repeated for each layer of the design until the 3D object is complete. 
+
 More advanced SLA printers like Formlabs’ Form Series printers also use a cartridge system that automatically refills the material during printing. This means that after a quick confirmation of the correct setup, the printing process begins and the machine can run unattended until the print is complete.
-
-
 
 ## 3. Post-Process ##
 
 After printing, the part is in a not-fully-cured state so they could benefit from further steps like sanding, machining, priming, painting,coating, electroplating, or media blasting. These advanced resin 3D print post-processing methods can achieve a wide range of results, such as making parts better suited for outdoor applications through UV protection, or increasing the mechanical strength.
-To remove parts from the build platform, different SLA 3D printers have various methods; most are manual and require scraping parts off. 
-After removing parts from the build platform, parts require rinsing in isopropyl alcohol (IPA) or ether wash to remove any uncured resin from their surface or they can be heated under UV light if very high mechanical and thermal properties are required. The photopolymerization process is irreversible and there is no way to convert the SLA parts back to their liquid form so heating these SLA parts will cause them to burn instead of melt. 
-After rinsed parts are dry, some materials require post-curing, a process that helps improve parts' strength and performance, and reach their optimal material properties.
-Finally, remove supports, which are typically created automatically during the preparation of CAD models and can also be made manually, from the parts and sand the remaining support marks for a clean finish. Stereolithography requires the use of supporting structures which attach to the elevator platform to prevent deflection due to gravity, resist lateral pressure from the resin-filled blade, or retain newly created sections during the "vat rocking" of bottom up printing. In either situation, the supports must be removed manually after printing.
-
-
-Formlabs' second-generation Form Wash has improved agitation and a larger volume to make cleaning parts easier than ever. 
-
-Form Cure is designed to post-cure resin 3D printed parts printed with speed and consistency.
-
-Coatings like Cerakote can reinforce SLA 3D printed parts and make them stronger, more durable, and more aesthetically pleasing.
-
-
-Schematic of SLA printer
+1. To remove parts from the build platform, different SLA 3D printers have various methods; most are manual and require scraping parts off. 
+2. After removing parts from the build platform, parts require rinsing in isopropyl alcohol (IPA) or ether wash to remove any uncured resin from their surface or they can be heated under UV light if very high mechanical and thermal properties are required. The photopolymerization process is irreversible and there is no way to convert the SLA parts back to their liquid form so heating these SLA parts will cause them to burn instead of melt. 
+3. After rinsed parts are dry, some materials require post-curing, a process that helps improve parts' strength and performance, and reach their optimal material properties.
+4. Finally, remove supports, which are typically created automatically during the preparation of CAD models and can also be made manually, from the parts and sand the remaining support marks for a clean finish. Stereolithography requires the use of supporting structures which attach to the elevator platform to prevent deflection due to gravity, resist lateral pressure from the resin-filled blade, or retain newly created sections during the "vat rocking" of bottom up printing. In either situation, the supports must be removed manually after printing.
 
 # Types of SLA Printers #
 
 There are two main SLA machine setups: the top-down orientation and the bottom-up orientation: 
-1.   **Top-down:** These printers place the laser source above the tank and the part is built facing upwards. The build platform begins at the very top of the resin vat and moves downwards after every layer.
-2.   **Bottom-up:** These printers lower the build platform to touch the bottom of the resin-filled tank (also called vat) and place the light source under the resin tank so the part is built upside down. The tank has a transparent bottom with a silicone coating that allows the light of the laser to pass through but stops the cured resin from sticking to it. Also, the tanks and build platforms are removable that make it easy to change materials and start a new print. After every layer, the vat is "rocked", flexing and peeling off the cured resin from the bottom of the vat so that it is detached from the bottom of the vat and stays attached to the build platform as it moves upward. This is called the peeling step.
+1.   **Top-Down:** These printers place the laser source above the tank and the part is built facing upwards. The build platform begins at the very top of the resin vat and moves downwards after every layer.
+2.   **Bottom-Up:** These printers lower the build platform to touch the bottom of the resin-filled tank (also called vat) and place the light source under the resin tank so the part is built upside down. The tank has a transparent bottom with a silicone coating that allows the light of the laser to pass through but stops the cured resin from sticking to it. Also, the tanks and build platforms are removable that make it easy to change materials and start a new print. After every layer, the vat is "rocked", flexing and peeling off the cured resin from the bottom of the vat so that it is detached from the bottom of the vat and stays attached to the build platform as it moves upward. This is called the peeling step.
 
 The bottom-up orientation is mainly used in desktop printers, like Formlabs, while the top-down is generally used in industrial SLA systems. The following table summarizes the key characteristics and differences between the two orientations:
 
-
-Bottom-up (Desktop) SLA
-Top-down (Industrial) SLA
-Advantages
-+ Lower cost
-+ Widely available
-+ Lesser material wasted
-+ Very large build size
-+ Faster build times
-Disadvantages
-- Small build size
-- Smaller material range
-- Requires more post-processing due to extensive use of support
-- Higher cost
-- Requires specialist operator
-- Changing material involves emptying the whole tank
-Popular SLA printer manufacturers
-Formlabs
-3D Systems
-Build size
-Up to 145 x 145 x 175mm
-Up to 1500 x 750 x 500mm
-Typical layer height
-25 to 100 µm
-25 to 150 µm
-Dimensional Accuracy
-± 0.5% (lower limit: ± 0.010–0.250 mm)
-± 0.15% (lower limit ± 0.010–0.030 mm)
+|                                   |                                           Bottom-up (Desktop) SLA                                           |                                     Top-down (Industrial) SLA                                     |
+|-----------------------------------|:-----------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------:|
+| Advantages                        | + Lower cost + Widely available + Lesser material wasted                                                    | + Very large build size + Faster build times                                                      |
+| Disadvantages                     | - Small build size - Smaller material range - Requires more post-processing due to extensive use of support | - Higher cost - Requires specialist operator - Changing material involves emptying the whole tank |
+| Popular SLA printer manufacturers | Formlabs                                                                                                    | 3D Systems                                                                                        |
+| Build size                        | Up to 145 x 145 x 175mm                                                                                     | Up to 1500 x 750 x 500mm                                                                          |
+| Typical layer height              | 25 to 100 µm                                                                                                | 25 to 150 µm                                                                                      |
+| Dimensional Accuracy              | ± 0.5% (lower limit: ± 0.010–0.250 mm)                                                                      | ± 0.15% (lower limit ± 0.010–0.030 mm)                                                            |
 
 
-## Printing Parameters ##
+
+# Printing Parameters #
 
 Most print parameters in SLA systems are fixed by the manufacturer and cannot be changed. The only inputs are the layer height and part orientation (the latter determines support location).
 1. **Layer Height:** Ranges between 25 and 100 microns. Lower layer heights capture curved geometries more accurately but increase the build time and cost—and the probability of a failed print. A layer height of 100 microns is suitable for most common applications.
@@ -107,44 +77,24 @@ Most print parameters in SLA systems are fixed by the manufacturer and cannot be
 
 3D printing’s ability to create cost-effective parts with complex geometries makes innovation possible, and, with the right material, those innovative ideas can be tested, validated, and put into practice. In this regard, SLA printing materials are the most useful.
 SLA printing materials come in the form of liquids commonly referred to as "resins". A wide variety of resins are commercially available and it is also possible to use homemade resins. These resins are thermoset polymers, formulated in different configurations and chemistry - like "materials can be soft or hard, heavily filled with secondary materials like glass and ceramic” - to provide a wide range of optical, mechanical, electrical and thermal properties. These properties enable the SLA materials to have applications like mass-customized consumer goods, surgical tools, dental implants and appliances, manufacturing aids, rapid tooling, and more. Some resins can also be leveraged to produce pure silicone, polyurethane, or ceramic parts while some SLA materials can be more brittle than the materials produced with thermoplastics and for this reason, SLA parts can not be usually used for functional prototypes that will undertake significant loading. It is possible to classify the resins in the following categories:[23]
-General Purpose Resins
-General Purpose Resins are formulated for speed and consistency to create parts for general prototyping. From matte greyscale parts for design review prototypes to transparent parts printed in Clear Resin for see-through models and molds, General Purpose Resins are the workhorses of SLA 3D printing.
-Engineering and Manufacturing Resins
-Engineering Resins have been formulated to answer specific mechanical and thermal properties needs in engineering and manufacturing workflows, and enable new applications, streamline operations, and simplify field testing. These materials are designed to match or exceed the capabilities of industry-familiar materials like ABS, silicone, or PEEK. From extremely stiff, rigid materials, to robust materials that can handle impacts, to soft and flexible materials that can handle bending and flexing through repeated cycles. Unique specialty materials include ESD-safe or flame-retardant resins, as well as technical materials that haven’t been accessible in desktop 3D printing before, such as true ceramic and silicone 3D printing.
-Dental & Medical Resins
-These Resins are medical-grade materials for a wide range of applications, specifically in the healthcare industry, where performance and biocompatibility are critical. Materials in the medical resin family should be developed and manufactured in an ISO 13485 certified facility and be compatible with common disinfection and sterilization methods. Medical  Resins enable healthcare professionals to create accurate, biocompatible, and personalized anatomical models, surgical instrumentation, and medical devices that improve patient care whereas Dental Resins empower dental labs and practices to rapidly manufacture clear aligners, biocompatible appliances like surgical guides or splints, and even advanced intraoral applications such as full dentures or permanent restorations.
-Castable Resins
-These resins are easy to cast with intricate details,  have strong shape retention and zero ash-content after burnout. Hence they are designed to reliably reproduce crisp settings, sharp prongs, smooth shanks, fine surface details to enable the prototyping and production of custom jewelry. They enable anyone from retailers and designers producing custom jewelry to large casting houses manufacturing at scale to produce try-on pieces for customers, ready-to-cast custom jewelry, or masters for reusable jewelry molds.
-Sustainable Resins
-Recently,some studies have tested the possibility of green or reusable materials to produce "sustainable" resins.
+1. **General Purpose Resins:** General Purpose Resins are formulated for speed and consistency to create parts for general prototyping. From matte greyscale parts for design review prototypes to transparent parts printed in Clear Resin for see-through models and molds, General Purpose Resins are the workhorses of SLA 3D printing.
+2. **Engineering and Manufacturing Resins:** Engineering Resins have been formulated to answer specific mechanical and thermal properties needs in engineering and manufacturing workflows, and enable new applications, streamline operations, and simplify field testing. These materials are designed to match or exceed the capabilities of industry-familiar materials like ABS, silicone, or PEEK. From extremely stiff, rigid materials, to robust materials that can handle impacts, to soft and flexible materials that can handle bending and flexing through repeated cycles. Unique specialty materials include ESD-safe or flame-retardant resins, as well as technical materials that haven’t been accessible in desktop 3D printing before, such as true ceramic and silicone 3D printing.
+3. **Dental & Medical Resins:** These Resins are medical-grade materials for a wide range of applications, specifically in the healthcare industry, where performance and biocompatibility are critical. Materials in the medical resin family should be developed and manufactured in an ISO 13485 certified facility and be compatible with common disinfection and sterilization methods. Medical  Resins enable healthcare professionals to create accurate, biocompatible, and personalized anatomical models, surgical instrumentation, and medical devices that improve patient care whereas Dental Resins empower dental labs and practices to rapidly manufacture clear aligners, biocompatible appliances like surgical guides or splints, and even advanced intraoral applications such as full dentures or permanent restorations.
+4. **Castable Resins:** These resins are easy to cast with intricate details,  have strong shape retention and zero ash-content after burnout. Hence they are designed to reliably reproduce crisp settings, sharp prongs, smooth shanks, fine surface details to enable the prototyping and production of custom jewelry. They enable anyone from retailers and designers producing custom jewelry to large casting houses manufacturing at scale to produce try-on pieces for customers, ready-to-cast custom jewelry, or masters for reusable jewelry molds.
+5. **Sustainable Resins:** Recently,some studies have tested the possibility of green or reusable materials to produce "sustainable" resins.
+
 The availability of a specific material is highly dependent on the manufacturer and printer and this impacts the price of the materials. As such, the price of the resin varies greatly, from about $50 per liter for the standard material, upwards to $400 per liter for specialty materials, such as castable or dental resin. Industrial systems offer a wider range of materials than desktop SLA printers, which gives the designer closer control over the mechanical properties of the printed part. The following table summarizes the advantages and disadvantages of the most commonly used resins.
 
-
-Material
-Characteristics
-Standard resin
-+ Smooth surface finish
-- Relatively brittle
-High detail resin
-+ Higher dimensionally accuracy
-- Higher price
-Clear resin
-+ Transparent material
-- Requires post processing for a very clear finish
-Castable resin
-+ Used for creating mold patterns
-+ Low ash percentage after burnout
-Tough or Durable resin
-+ ABS-like or PP-like mechanical properties
-- Low thermal resistance
-High temperature resin
-+ Temperature resistance
-+ Used for injection molding and thermoforming tooling
-Dental resin
-+ Biocompatible+ High abrasion resistant- High cost
-Flexible resin
-+ Rubber-like material- Lower dimensional accuracy
-
+|        Material        |                                 Characteristics                                 |
+|:----------------------:|:-------------------------------------------------------------------------------:|
+| Standard resin         | + Smooth surface finish - Relatively brittle                                    |
+| High detail resin      | + Higher dimensionally accuracy - Higher price                                  |
+| Clear resin            | + Transparent material - Requires post processing for a very clear finish       |
+| Castable resin         | + Used for creating mold patterns + Low ash percentage after burnout            |
+| Tough or Durable resin | + ABS-like or PP-like mechanical properties - Low thermal resistance            |
+| High temperature resin | + Temperature resistance + Used for injection molding and thermoforming tooling |
+| Dental resin           | + Biocompatible+ High abrasion resistant- High cost                             |
+| Flexible resin         | + Rubber-like material- Lower dimensional accuracy                              |
 
 
 # Applications #
