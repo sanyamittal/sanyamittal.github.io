@@ -1,0 +1,224 @@
+---
+title: SLA Technology
+date: 2024-10-07
+tags:
+  - Resin Additive Manufacturing
+  - 3D printing
+  - SLA Technology
+---
+
+# Introduction #
+
+Stereolithography (SLA) is an additive manufacturing process that belongs to the vat photopolymerization family. Vat photopolymerization is a photochemical process by which light causes chemical monomers and oligomers to cross-link together to form polymers. Those polymers then make up the body of a three-dimensional solid. The materials used in vat  photopolymerization are photosensitive thermoset polymers that come in a liquid form. There are three main 3D printing technologies associated with vat polymerization: SLA, DLP and LCD. The three technologies all use a light source to cure a photopolymer resin but with the following differences:
+Stereolithography (SLA) uses UV lasers as a light source to selectively cure a polymer resin.
+Digital light processing (DLP) uses a digital projector as a light source to cure a layer of resin. DLP printers cure each layer all at once in a single flash of light. This makes them quite fast compared to traditional, laser-based resin 3D printers.
+Liquid crystal display (LCD) uses an LCD display module for projecting specific light patterns.
+
+Stereolithography (SLA) 3D printing  is one of the most widely used vat photopolymerization technologies for its ability to produce high-accuracy, isotropic, and watertight prototypes and end-use parts. SLA 3D printers produce parts with a range of advanced material properties, superior surface finishes, and fine features. It is also known as optical fabrication, photo-solidification, or resin printing but the term Stereolithography was coined by Chuck Hull in 1984 when he applied for a patent on the process, which was granted in 1986.
+
+Stereolithography can be used to create prototypes for products in development, medical models, and computer hardware, as well as in many other applications. While stereolithography is fast and can produce almost any design, it can be expensive.
+
+# SLA Printing Process #
+Stereolithography is an additive manufacturing process that, in its most common form, works by focusing an ultraviolet (UV) laser on to a vat of photopolymer resin.
+
+
+## 1. Design ##
+
+With the help of computer aided manufacturing or computer-aided design (CAM/CAD) software,[15] the UV laser is used to draw a pre-programmed design or shape onto the surface of the photopolymer vat. Use any CAD software or 3D scan data to design the model, and export it in a 3D printable file format (STL or OBJ). Then, import the digital design into print preparation software to specify printing settings and slice the digital model into layers for printing. More advanced users may consider specifically designing for SLA, or taking steps like hollowing parts to conserve material.
+
+Formlabs’ print preparation software, PreForm, is free to download and can create automated supports and print orientations.
+
+## 2. Print ##
+
+The printing process in a typical SLA printer is as follows:
+
+The print preparation software sends the design to the printer, typically over a wireless internet connection, USB, or ethernet. 
+The build platform is positioned in the tank of liquid photopolymer, at a distance of one layer height from the surface of the liquid.
+The UV laser is used to draw a pre-programmed design or shape onto the surface of the photopolymer vat. It creates a layer by selectively curing and solidifying the photopolymer resin. The laser beam is focused in a predetermined path using a set of mirrors, called galvos. The whole cross-sectional area of the model is scanned, so the produced part is fully solid.
+Then, the build platform moves downward or upward after one layer and a blade recoats the top of the tank with resin.
+This process is repeated for each layer of the design until the 3D object is complete. 
+More advanced SLA printers like Formlabs’ Form Series printers also use a cartridge system that automatically refills the material during printing. This means that after a quick confirmation of the correct setup, the printing process begins and the machine can run unattended until the print is complete.
+
+
+
+## 3. Post-Process ##
+
+After printing, the part is in a not-fully-cured state so they could benefit from further steps like sanding, machining, priming, painting,coating, electroplating, or media blasting. These advanced resin 3D print post-processing methods can achieve a wide range of results, such as making parts better suited for outdoor applications through UV protection, or increasing the mechanical strength.
+To remove parts from the build platform, different SLA 3D printers have various methods; most are manual and require scraping parts off. 
+After removing parts from the build platform, parts require rinsing in isopropyl alcohol (IPA) or ether wash to remove any uncured resin from their surface or they can be heated under UV light if very high mechanical and thermal properties are required. The photopolymerization process is irreversible and there is no way to convert the SLA parts back to their liquid form so heating these SLA parts will cause them to burn instead of melt. 
+After rinsed parts are dry, some materials require post-curing, a process that helps improve parts' strength and performance, and reach their optimal material properties.
+Finally, remove supports, which are typically created automatically during the preparation of CAD models and can also be made manually, from the parts and sand the remaining support marks for a clean finish. Stereolithography requires the use of supporting structures which attach to the elevator platform to prevent deflection due to gravity, resist lateral pressure from the resin-filled blade, or retain newly created sections during the "vat rocking" of bottom up printing. In either situation, the supports must be removed manually after printing.
+
+
+Formlabs' second-generation Form Wash has improved agitation and a larger volume to make cleaning parts easier than ever. 
+
+Form Cure is designed to post-cure resin 3D printed parts printed with speed and consistency.
+
+Coatings like Cerakote can reinforce SLA 3D printed parts and make them stronger, more durable, and more aesthetically pleasing.
+
+
+Schematic of SLA printer
+
+# Types of SLA Printers #
+
+There are two main SLA machine setups: the top-down orientation and the bottom-up orientation: 
+1.   **Top-down:** These printers place the laser source above the tank and the part is built facing upwards. The build platform begins at the very top of the resin vat and moves downwards after every layer.
+2.   **Bottom-up:** These printers lower the build platform to touch the bottom of the resin-filled tank (also called vat) and place the light source under the resin tank so the part is built upside down. The tank has a transparent bottom with a silicone coating that allows the light of the laser to pass through but stops the cured resin from sticking to it. Also, the tanks and build platforms are removable that make it easy to change materials and start a new print. After every layer, the vat is "rocked", flexing and peeling off the cured resin from the bottom of the vat so that it is detached from the bottom of the vat and stays attached to the build platform as it moves upward. This is called the peeling step.
+
+The bottom-up orientation is mainly used in desktop printers, like Formlabs, while the top-down is generally used in industrial SLA systems. The following table summarizes the key characteristics and differences between the two orientations:
+
+
+Bottom-up (Desktop) SLA
+Top-down (Industrial) SLA
+Advantages
++ Lower cost
++ Widely available
++ Lesser material wasted
++ Very large build size
++ Faster build times
+Disadvantages
+- Small build size
+- Smaller material range
+- Requires more post-processing due to extensive use of support
+- Higher cost
+- Requires specialist operator
+- Changing material involves emptying the whole tank
+Popular SLA printer manufacturers
+Formlabs
+3D Systems
+Build size
+Up to 145 x 145 x 175mm
+Up to 1500 x 750 x 500mm
+Typical layer height
+25 to 100 µm
+25 to 150 µm
+Dimensional Accuracy
+± 0.5% (lower limit: ± 0.010–0.250 mm)
+± 0.15% (lower limit ± 0.010–0.030 mm)
+
+
+Printing Parameters
+Most print parameters in SLA systems are fixed by the manufacturer and cannot be changed. The only inputs are the layer height and part orientation (the latter determines support location).
+Layer height: Ranges between 25 and 100 microns. Lower layer heights capture curved geometries more accurately but increase the build time and cost—and the probability of a failed print. A layer height of 100 microns is suitable for most common applications.
+Build Size: This is another parameter that is important for the designer. The build size depends on the type of SLA machine. Bottom-up SLA printers are easier to manufacture and operate, but their build size is limited. This is because the forces applied to the part during the peeling step might cause the print to fail. On the other hand, top-down printers can scale up to very large build sizes without a big loss in accuracy though the advanced capabilities of these systems come at a higher cost.
+
+# Materials #
+
+3D printing’s ability to create cost-effective parts with complex geometries makes innovation possible, and, with the right material, those innovative ideas can be tested, validated, and put into practice. In this regard, SLA printing materials are the most useful.
+SLA printing materials come in the form of liquids commonly referred to as "resins". A wide variety of resins are commercially available and it is also possible to use homemade resins. These resins are thermoset polymers, formulated in different configurations and chemistry - like "materials can be soft or hard, heavily filled with secondary materials like glass and ceramic” - to provide a wide range of optical, mechanical, electrical and thermal properties. These properties enable the SLA materials to have applications like mass-customized consumer goods, surgical tools, dental implants and appliances, manufacturing aids, rapid tooling, and more. Some resins can also be leveraged to produce pure silicone, polyurethane, or ceramic parts while some SLA materials can be more brittle than the materials produced with thermoplastics and for this reason, SLA parts can not be usually used for functional prototypes that will undertake significant loading. It is possible to classify the resins in the following categories:[23]
+General Purpose Resins
+General Purpose Resins are formulated for speed and consistency to create parts for general prototyping. From matte greyscale parts for design review prototypes to transparent parts printed in Clear Resin for see-through models and molds, General Purpose Resins are the workhorses of SLA 3D printing.
+Engineering and Manufacturing Resins
+Engineering Resins have been formulated to answer specific mechanical and thermal properties needs in engineering and manufacturing workflows, and enable new applications, streamline operations, and simplify field testing. These materials are designed to match or exceed the capabilities of industry-familiar materials like ABS, silicone, or PEEK. From extremely stiff, rigid materials, to robust materials that can handle impacts, to soft and flexible materials that can handle bending and flexing through repeated cycles. Unique specialty materials include ESD-safe or flame-retardant resins, as well as technical materials that haven’t been accessible in desktop 3D printing before, such as true ceramic and silicone 3D printing.
+Dental & Medical Resins
+These Resins are medical-grade materials for a wide range of applications, specifically in the healthcare industry, where performance and biocompatibility are critical. Materials in the medical resin family should be developed and manufactured in an ISO 13485 certified facility and be compatible with common disinfection and sterilization methods. Medical  Resins enable healthcare professionals to create accurate, biocompatible, and personalized anatomical models, surgical instrumentation, and medical devices that improve patient care whereas Dental Resins empower dental labs and practices to rapidly manufacture clear aligners, biocompatible appliances like surgical guides or splints, and even advanced intraoral applications such as full dentures or permanent restorations.
+Castable Resins
+These resins are easy to cast with intricate details,  have strong shape retention and zero ash-content after burnout. Hence they are designed to reliably reproduce crisp settings, sharp prongs, smooth shanks, fine surface details to enable the prototyping and production of custom jewelry. They enable anyone from retailers and designers producing custom jewelry to large casting houses manufacturing at scale to produce try-on pieces for customers, ready-to-cast custom jewelry, or masters for reusable jewelry molds.
+Sustainable Resins
+Recently,some studies have tested the possibility of green or reusable materials to produce "sustainable" resins.
+The availability of a specific material is highly dependent on the manufacturer and printer and this impacts the price of the materials. As such, the price of the resin varies greatly, from about $50 per liter for the standard material, upwards to $400 per liter for specialty materials, such as castable or dental resin. Industrial systems offer a wider range of materials than desktop SLA printers, which gives the designer closer control over the mechanical properties of the printed part. The following table summarizes the advantages and disadvantages of the most commonly used resins.
+
+
+Material
+Characteristics
+Standard resin
++ Smooth surface finish
+- Relatively brittle
+High detail resin
++ Higher dimensionally accuracy
+- Higher price
+Clear resin
++ Transparent material
+- Requires post processing for a very clear finish
+Castable resin
++ Used for creating mold patterns
++ Low ash percentage after burnout
+Tough or Durable resin
++ ABS-like or PP-like mechanical properties
+- Low thermal resistance
+High temperature resin
++ Temperature resistance
++ Used for injection molding and thermoforming tooling
+Dental resin
++ Biocompatible+ High abrasion resistant- High cost
+Flexible resin
++ Rubber-like material- Lower dimensional accuracy
+
+
+
+# Applications #
+
+SLA 3D printing has applications in any situation requiring objects with smooth surfaces,  tight tolerances, high resolution and high precision. Advanced materials, incredible dimensional accuracy, and accessible workflows make parts at every stage, from prototyping to production, possible. As costs have come down at the same time that the technology has become more affordable and scalable, end-use applications and mass-customization are becoming the norm, not the exception. This ranges from architectural models to sonar submersibles and marketing props though its main industries have historically been dentistry and jewelry. 
+Resin 3D printed parts accelerate innovation and support businesses in a wide range of industries and applications. Let’s take a look at a few of the common applications for which our customers create parts with SLA 3D printing:
+
+
+
+1.  **Engineering and Product Design:** Rapid prototyping, Functional prototyping, Concept models, Validation testing with 3D printing empowers engineers and product designers to turn ideas into realistic proofs of concept, advance these concepts to high-fidelity prototypes that look and work like final products, and guide products through a series of validation stages toward mass production.
+2.  **Manufacturing:** Manufacturers automate production processes and streamline workflows by prototyping tooling (injection molding, thermoforming, silicone molding, blow molding, metal casting) and directly 3D printing custom tools, molds, and manufacturing aids (jigs and fixtures) at far lower costs and lead times than with traditional manufacturing. This reduces manufacturing costs and defects, increases quality, speeds up assembly, enables Mass customization and maximizes labor effectiveness.
+3.  **Automotive:** Automotive designers, manufacturers, and engineers use SLA 3D printing for a variety of parts throughout their process. From concept models to aftermarket and custom parts, SLA 3D printing is everywhere, and touches the development or production of every car on the road. Automotive manufacturers use SLA 3D printing for rapid prototyping of vehicle components, including interior panels, engine parts, and prototype models.
+4.  **Aerospace:** Aerospace engineers use SLA 3D printing to create lightweight and intricate components for aircraft and spacecraft – from prototypes to tooling to end-use parts. SLA 3D printed parts have been sent to space for testing on the International Space Station, used in manufacturing for commercial airlines, and are used across the world for testing, prototyping, and manufacturing in both the private and federal aerospace industry. From fixtures that help build space mission lasers to ceramics that are used in testing for jet-fuel applications, SLA parts are helping us reach the final frontier. 
+5.  **Dental:** SLA 3D printing is a fast and easy way to fabricate dental models, crowns, bridges, casting patterns, restorations and other prosthetics like clear aligners, surgical guides and splints. Dental labs also use SLA printers to create models of patients' teeth so they can create custom dental appliances. Companies like market leader Formlabs have even developed specialty resins for Digital dentistry that reduces the risks and uncertainties introduced by human factors, providing higher consistency, accuracy, and precision at every stage of the workflow to improve patient care. 3D printers can produce a range of high-quality custom products and appliances at low unit costs with superior fit and repeatable results.
+6.  **Medical:** Affordable, professional-grade desktop 3D printing helps doctors deliver treatments and devices with a high level of customization to better serve each unique individual, opening the door to high-impact medical applications while saving organizations significant time and costs. Further, Medical technicians use SLA 3D printers to make custom surgical guides, anatomical models, and patient-specific implants, Orthotics and prosthetics especially for orthopedics and reconstructive surgery.
+7.  **Education:** Resin 3D printers are multifunctional tools for immersive learning and advanced research and development. They can encourage creativity and expose students to professional-level technology through 3D printing labs and makerspaces while supporting STEAM curricula across science, engineering, art, and design.
+8.  **Entertainment:** High-definition physical models and Hyper-realistic sculptures are widely used in sculpting, character modeling, and prop making. 3D printed parts have starred in stop-motion films, video games, bespoke costumes, and even special effects for blockbuster movies.
+9.  **Jewelry:** In jewelry-making, the primary use case is creating inexpensive, castable molds to pour metal into called Lost-wax casting (investment casting). For example, jewelers can quickly produce Customized high-fidelity prototypes to test sizing for custom ring orders. Jewelry professionals use CAD and 3D printing to rapidly prototype designs, fit clients, and produce large batches of ready-to-cast pieces. Digital tools allow for the creation of consistent, sharply detailed pieces without the tediousness and variability of wax carving in a process called Master patterns for rubber molding.
+10.  **Audiology:** Hearing specialists and ear mold labs use digital workflows and 3D printing to manufacture higher quality custom ear products more consistently, and at higher volumes, for applications like behind-the-ear hearing aids, hearing protection, and custom earplugs and earbuds.
+
+# Advantages #
+
+Professionals choose SLA 3D printing for its ability to quickly produce parts with fine features, smooth surface finishes, excellent precision, high accuracy, superior mechanical attributes, isotropy, watertightness, and material versatility. The following are the main advantages of SLA 3D printing.
+
+1. **Speed and Throughput:** As more businesses turn to 3D printing for production as well as rapid iteration, 3D printing speed becomes a greater consideration when choosing a technology. Though advances have been made in 3D printing speed across all technologies, SLA 3D printing has established itself as the clear frontrunner for the fastest 3D printing process available, making the technology well-suited to rapid prototyping and small-batch production. Some resin 3D printing processes are faster than others; laser-powered SLA generally cures each layer more slowly than DLP or MSLA (LCD) technologies that can cure an entire cross-section with one quick exposure of the light source. 
+Functional parts can be manufactured within a day.[10] The length of time it takes to produce a single part depends upon the complexity of the design and the size. Printing time can last anywhere from hours to more than a day and when that speed is compounded day by day and week by week, the throughput benefits are extraordinary. The throughput possible with a fleet of affordable, fast, and easy-to-use 3D printers, while printing full build chambers over the course of a few hours, multiple times a day, can match the output of traditional processes like injection molding but without the long lead times and high upfront cost of tooling.
+2. **Material Versatility:** SLA resins are incredibly versatile, and there are hundreds of different formulations available. They can be soft or hard, heavily filled with secondary materials like glass and ceramic, or imbued with mechanical properties like high heat deflection temperature or impact resistance. Materials range from industry-specific, like dentures, to specialty SLA materials that closely match final materials for prototyping, formulated to withstand extensive testing and perform under stress.
+Many manufacturers of SLA printers also formulate and manufacture their own resins for use in a closed system, though some offer an open platform for any resin to be used, and others white-label other companies’ resins. 
+Because these resins are formulated specifically for SLA 3D printers, they are not completely analogous to the familiar thermoplastics like nylon or ABS used in traditional plastic manufacturing methods like injection molding. Though learning which resin is best for a specific application may take testing and consideration of data sheets and application guides, there is an SLA resin for almost every application possible — the enormous variety of mechanical and aesthetic properties available make it easy to create an optimized and efficient workflow. 
+
+3. **Accuracy and Precision:** Accuracy and precision are paramount for all industries from manufacturing to dentistry, and SLA printing is one of the most accurate 3D printing solutions on the market currently. Accuracy refers to how closely you match the dimensions of the CAD model, and precision is defined as how repeatedly you can produce the same dimension. 
+Compared to machined accuracy, professional SLA 3D printers are somewhere between standard machining and fine machining. However, accuracy does vary between resin 3D printer manufacturers and can be dependent on:
+Material: rigid materials are more accurate and easier to print with than flexible materials.
+Model Size: When 3D printing larger models (81-150 mm features), the typical dimensional tolerances are ±0.3% (lower limit: ±0.15 mm) when using Grey Resin. For smaller parts and specific applications, the surface accuracy can even be optimized even further — when restorative models are 3D printed in Precision Model Resin, >95% of the printed surface area is within 50 μm of the digital model
+Light Source: The type of light source used to cure the resin, especially the high-resolution liquid crystal display and collimating lenses, create hyper-accurate cross-sections of each part.
+Temperature: Better accuracy is also a function of lower printing temperature compared to thermoplastic-based technologies that melt the raw material. Because stereolithography uses light instead of heat, the printing process takes place at close to room temperature, and printed parts don't suffer from thermal expansion and contraction artifacts.
+The precision comes from the quality of the components, and the engineering and calibration that go into making those components function together.The low peel forces made possible in the Resin Tank makes accuracy repeatable, leading to highly precise parts. Further, the heated and enclosed build environment of SLA 3D printers provides almost identical conditions for each print. 
+4. **Fine Features and Smooth Surface Finish:** Resin 3D printers create parts with a smooth surface finish, which translates to barely any visible layer lines even on complex features, like curved edges.
+SLA 3D printers are considered the gold standard for creating parts with smooth surface finishes and fine features making them ideal for visual prototypes. The surface quality of SLA 3D printed parts lends itself to the creation of end-use products that look and feel like mass-produced consumer goods. It also makes secondary processes like rapid tooling possible. Resin 3D printed parts can easily have appearances comparable to traditional manufacturing methods like injection molding with barely any post-processing. Conversely, FDM 3D printed parts often have visible layer lines, and SLS 3D printed parts often exhibit a grainy, slightly rough texture on the surface. 
+SLA 3D printers also can achieve finer features and smaller minimum feature sizes than FDM 3D printers, comparable to SLS 3D printers. The light in resin 3D printers can be controlled in much more precise shapes than a filament extruder and therefore create smaller features or thinner walls. And, because SLA light sources can be lower power than the lasers required to melt powder in SLS 3D printers, they can cure with greater precision, leading to smaller features.
+
+
+While FDM 3D printed parts tend to have visible layer lines and might show inaccuracies around complex features, parts printed on SLA machines have sharp edges, a smooth surface finish, and minimal visible layer lines.
+
+
+5. **Isotropy:** Because 3D printing creates parts one layer at a time, completed prints may have variations in strength based on the orientation of the part, with different properties in X, Y, and Z axes. Extrusion-based 3D printing processes like fused deposition modeling (FDM) are known for being anisotropic due to layer-to-layer differences created by the print process. This anisotropy limits the usefulness of FDM for certain applications or requires more adjustments on the part geometry side to compensate for it.
+In contrast, SLA resin 3D printers create highly isotropic parts. Achieving part isotropy is based on a number of factors that can be tightly controlled by integrating material chemistry with the print process. During printing, resin components form covalent bonds, but layer to layer, the part remains in a semi-reacted “green state.” While in the green state, the resin retains polymerizable groups that can form bonds across layers, imparting isotropy and watertightness to the part upon final cure. On the molecular level, there is no difference between X, Y, or Z planes. This results in parts with predictable mechanical performance critical for applications like jigs and fixtures, end-use parts, and functional prototyping.
+
+
+
+6. **Watertightness:** SLA printed objects are continuous, whether producing geometries with solid features or internal channels. Custom watertight and gas-tight parts are important for engineering and manufacturing applications across several industries such as marine research, underwater robotics, sustainable technologies engineering, oil and gas industries, defense, automotive, biomedical research, and consumer products like kitchen appliances, where air or fluid flow must be controlled and predictable.
+Though some 3D printing technologies present an ideal solution for these parts, the common perception of additively manufactured parts is that they are porous and cannot be deployed in pressurized environments. In recent years, however, this assumption has been thoroughly disproven. SLA printers can create watertight enclosures and completely waterproof parts. Institutions like National Oceanic and Atmospheric Administration (NOAA) and the University of Rhode Island have made incredible strides in marine research by implementing low-cost, high-quality SLA 3D printed testing and research equipment.
+
+
+
+
+
+OXO relies on the watertightness of SLA 3D printing to create robust functional prototypes for products with air or fluid flow, like this coffee maker.
+
+
+# Disadvantages #
+
+Although stereolithography can be used to produce virtually any synthetic design, there are a few of the drawbacks of SLA 3D printing.
+1. **Brittleness:** SLA parts are generally brittle and not suitable for functional prototypes. 
+2. **UV degradation:** The mechanical properties and visual appearance of SLA parts will degrade over time when the parts are exposed to sunlight.
+3. **Support structures:** Support structures are always required and post-processing is necessary to remove the visual marks left on the SLA part.
+4. **Limited build volume:** SLA printers tend to have smaller build volumes than other types of 3D printers. This limits the size of parts you can create in a single print.
+5. **Material handling:** SLA resins can be tricky (sticky and messy) to work with. They may also require special handling procedures, such as proper ventilation, due to potential resin toxicity. SLA technologies have not created any biodegradable or compostable forms of resin, while other 3-D printing methods offer some compostable PLA options.
+6. **Post-curing:** Newly made parts need to be washed, further cured in UV light, and dried to ensure optimal material properties. These processes can have an environmental impact and make lead times longer – and add complexity to the printing process, potentially resulting in higher costs.
+7. **Higher Costs:**  SLA printers are often costly, though the price is coming down since 2012. However, public interest in 3D printing has inspired the design of several consumer SLA machines which can cost considerably less. Beginning in 2016, substitution of the SLA and DLP methods using a high resolution, high contrast LCD panel has brought prices down to below US$200. The layers are created in their entirety since the entire layer is displayed on the LCD screen and is exposed using UV LEDs that lie below.
+
+# References #
+
+1. Formlabs: https://formlabs.com/asia/blog/ultimate-guide-to-stereolithography-sla-3d-printing/
+2. Wikipedia: https://en.wikipedia.org/wiki/Stereolithography#Technology
+3. PROTOLABS NETWORK: https://www.hubs.com/knowledge-base/what-is-sla-3d-printing/
+4. 3D SYSTEMS: https://www.3dsystems.com/stereolithography
+5. Dassault Systemes: https://www.3ds.com/make/service/3d-printing-service/sla-stereolithography
