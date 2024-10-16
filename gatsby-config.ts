@@ -38,10 +38,6 @@ const config: GatsbyConfig = {
             name: `LinkedIn`,
             url: `https://www.linkedin.com/in/mittal-sanya/`,
           },
-          {
-            name: `Homepage`,
-            url: `https://sanya-mittal.com`,
-          },
         ],
       },
     },
