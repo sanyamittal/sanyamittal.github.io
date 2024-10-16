@@ -36,7 +36,7 @@ const config: GatsbyConfig = {
         externalLinks: [
           {
             name: `LinkedIn`,
-            url: `https://www.linkedin.com/in/sanya-mittal-71363975/`,
+            url: `https://www.linkedin.com/in/mittal-sanya/`,
           },
           {
             name: `Homepage`,
