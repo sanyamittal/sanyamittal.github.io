@@ -60,11 +60,14 @@ params:
   profileMode:
     enabled: true
     title: Sanya Mittal
+    subtitle: "Business Analyst | India"
     imageUrl: "./images/sanya-mittal.jpg"
     imageTitle: sanya mittal
     # imageWidth: 120
     # imageHeight: 120
     buttons:
+      - name: LinkedIn
+        url: https://www.linkedin.com/in/mittal-sanya/
       - name: Read my articles
         url: blog
 
