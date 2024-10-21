@@ -40,11 +40,11 @@ accordingly.
 communication can be achieved.
 7. IoT Gateways: IoT Gateway sits at the intersection of Nodes and Cloud. It aggregates and processes the
 information from multiple Nodes and facilitates the data flow to the cloud. IoT Gateway is capable of
-- Connecting to the nodes via specific protocols (Communication between Node and Gateway)
-- Storing and parsing the information from the nodes
-- Sending information to the cloud servers for processing (Communication between Gateway and
+  - Connecting to the nodes via specific protocols (Communication between Node and Gateway)
+  - Storing and parsing the information from the nodes
+  - Sending information to the cloud servers for processing (Communication between Gateway and
 Cloud)
-- Controlling the nodes in the field in real time
+  - Controlling the nodes in the field in real time
 
 8. IoT Communication Technologies: WPAN protocols are used to exchange information between Nodes
 and Gateways. A Wireless Personal Area Network (WPAN) is a network for interconnecting devices
