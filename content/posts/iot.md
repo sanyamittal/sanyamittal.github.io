@@ -26,13 +26,10 @@ communicate the physical parameters related to things.
 system.
 3. Sensor: A sensor is a device that measures physical parameters of a thing like humidity, blood pressure,
 speed etc., collects light, vibration and chemical signals, and transforms them into electrical signals and
-then transfers them to the Microcontroller. A variety of sensors have been used across industries for years,
-specifically in vehicles, buildings and factories.
+then transfers them to the Microcontroller. A variety of sensors have been used across industries for years, specifically in vehicles, buildings and factories.
 
-The table below lists the various factors you should consider while buying a sensor.
 
-4. Actuators: Actuators are devices which convert mechanical or electrical signals into motion. They are
-responsible for performing actions like switching on or off a light, generating sound or locking a door.
+4. Actuators: Actuators are devices which convert mechanical or electrical signals into motion. They are responsible for performing actions like switching on or off a light, generating sound or locking a door.
 
 5. Microcontroller: The Microcontroller receives the data from the sensor and processes the data
 accordingly.
