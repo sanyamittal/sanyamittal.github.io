@@ -90,25 +90,18 @@ Message Queuing Telemetry Protocol.
 There are some of the IoT issues and concerns:
 ## Privacy &amp; Security ##
 
- One of the greatest threats to the IoT comes from the strain put on the global system of information
-exchange that the IoT relies upon
- Poorly secured IoT devices and services can serve as potential entry points for cyber-attack and expose user
-data to theft by leaving data streams inadequately protected.
+- One of the greatest threats to the IoT comes from the strain put on the global system of information exchange that the IoT relies upon.
+- Poorly secured IoT devices and services can serve as potential entry points for cyber-attack and expose user data to theft by leaving data streams inadequately protected.
 
 ## Interoperability &amp; Standards ##
 
- A fragmented environment of proprietary IoT technical implementations will inhibit value for users and
-industry.
- The use of generic, open, and widely available standards as technical building blocks for IoT devices and
-services will support greater user benefits innovation and economic opportunity.
+- A fragmented environment of proprietary IoT technical implementations will inhibit value for users and industry.
+- The use of generic, open, and widely available standards as technical building blocks for IoT devices and services will support greater user benefits innovation and economic opportunity.
 
 ## Legal, Regulatory &amp; Rights ##
 
- The use of IoT devices raises many new regulatory and legal questions as well as amplifies existing legal
-issues around the Internet.
-
- The questions are wide in scope, and the rapid rate of change in IoT technology frequently outpaces the
-ability of the associated policy, legal, and regulatory structures to adapt.
+- The use of IoT devices raises many new regulatory and legal questions as well as amplifies existing legal issues around the Internet.
+- The questions are wide in scope, and the rapid rate of change in IoT technology frequently outpaces the ability of the associated policy, legal, and regulatory structures to adapt.
 
 # Use Case Cold Storage #
 
@@ -123,15 +116,15 @@ spoilt.
 ## Solution ##
 
 The company must ensure the following to solve the above problem:
- Maintain the temperature inside the trucks at less than 2 degrees
- Maintain humidity inside truck at 10%
+- Maintain the temperature inside the trucks at less than 2 degrees
+- Maintain humidity inside truck at 10%
 
 ## Approach ##
 
- Identify the sensors to be fitted inside the truck
- Connect the sensors to the trucks
- Collect and transfer the sensor data from the truck to the IoT platform
- Alert and act in case of any deviation
+- Identify the sensors to be fitted inside the truck
+- Connect the sensors to the trucks
+- Collect and transfer the sensor data from the truck to the IoT platform
+- Alert and act in case of any deviation
 
 ## IoT Ecosystem ##
 
@@ -157,15 +150,12 @@ connectors for transmitting temperature and humidity data to Cloud Platform.
 5. The temperature and humidity data, sent from each truck through the Arduino gateway, is stored in a
 database on the Cloud.
 6. An IoT platform hosted on cloud accesses this data and following needs to be done:
-- Configure the User (Manager) credentials using name/mail-id/phone number
-- Create nodes with unique Node numbers where each node represents a combination of truck and
-Arduino boards.
-- Device No. in Arduino should match with the one created in the IoT Platform
+  - Configure the User (Manager) credentials using name/mail-id/phone number
+  - Create nodes with unique Node numbers where each node represents a combination of truck and Arduino boards.
+  - Device No. in Arduino should match with the one created in the IoT Platform
 7. In the IoT platform, Rules and Alarms can be created for each truck.
-8. A rule is set in the IoT Platform, to check if temperature is greater than 2 degrees and the humidity is
-greater than 10% in each of the trucks.
-9. An alarm is created to send SMS with details of truck and deviation to manager under whom truck is
-registered, if the above rule is met.
+8. A rule is set in the IoT Platform, to check if temperature is greater than 2 degrees and the humidity is greater than 10% in each of the trucks.
+9. An alarm is created to send SMS with details of truck and deviation to manager under whom truck is registered, if the above rule is met.
 10. Now for every set of data that the IoT platform receives, the rule is executed. If the rule is successful, the
 alarm is triggered automatically. In this case an SMS is sent to the manager.
 11. The manager who receives SMS takes appropriate action, like calling truck driver to clarify the settings and corrective actions.
