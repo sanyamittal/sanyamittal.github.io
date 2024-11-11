@@ -39,7 +39,7 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Sanya Mittal | Business Analyst"
+  description: "Sanya Mittal | Business Consultant"
   author: Sanya Mittal
   defaultTheme: auto
   # disableThemeToggle: true
@@ -60,7 +60,7 @@ params:
   profileMode:
     enabled: true
     title: Sanya Mittal
-    subtitle: "Hello! I’m a Business Analyst from Bengaluru, India, with a decade of experience in the IT industry. My passion lies in exploring and implementing Industry 4.0 technologies, particularly additive manufacturing and IoT. My mission is to propel India to the forefront of these innovative fields, driving progress and fostering a tech-savvy future."
+    subtitle: "Hello! I’m a Business Consultant from Bengaluru, India, with a decade of experience in the IT industry. My passion lies in exploring and implementing Industry 4.0 technologies, particularly additive manufacturing and IoT. My mission is to propel India to the forefront of these innovative fields, driving progress and fostering a tech-savvy future."
     imageUrl: "./images/sanya-mittal.jpg"
     imageTitle: sanya mittal
     # imageWidth: 120
